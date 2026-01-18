@@ -27,6 +27,10 @@ share/python-wheels/
 MANIFEST
 my_project/
 
+# Visualization scripts (for social media - not part of the package)
+visualize.py
+agentforge_*.png
+
 # PyInstaller
 *.manifest
 *.spec
