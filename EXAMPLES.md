@@ -2,9 +2,13 @@
 
 Real-world examples for different use cases. Each example is self-contained and ready to run!
 
-**Author:** Prof. Shahab Anbarjafari  
-**Organization:** 3S Holding OÜ, Tartu, Estonia  
-**Email:** shb@3sholding.com
+**© 2024 3S Holding OÜ, Tartu, Estonia**
+
+| | |
+|---|---|
+| **Creator** | Prof. Shahab Anbarjafari |
+| **Contact** | shb@3sholding.com |
+| **Commercial Use** | For business licensing, contact shb@3sholding.com |
 
 ---
 

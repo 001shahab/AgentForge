@@ -11,9 +11,19 @@ I created AgentForge because I wanted a simple, clean way to chain together diff
 
 ---
 
-**Designed and developed by Prof. Shahab Anbarjafari**  
-3S Holding OÜ, Tartu, Estonia  
-📧 shb@3sholding.com
+## ⚖️ Ownership & Licensing
+
+**© 2024 3S Holding OÜ. All Rights Reserved.**
+
+| | |
+|---|---|
+| **Creator** | Prof. Shahab Anbarjafari |
+| **Organization** | 3S Holding OÜ, Tartu, Estonia |
+| **Contact** | 📧 shb@3sholding.com |
+
+This project is released under the **MIT License** for open-source use. 
+
+**🏢 For commercial/business licensing, enterprise support, or partnership inquiries, please contact us directly at shb@3sholding.com**
 
 ---
 
@@ -263,9 +273,19 @@ Here's what I'm planning for future releases:
 - [ ] Better error recovery and retry logic
 - [ ] Plugin marketplace
 
-## License
+## License & Legal
 
-MIT License - see [LICENSE](LICENSE) for details.
+**© 2024 3S Holding OÜ, Tartu, Estonia. All Rights Reserved.**
+
+This project is licensed under the **MIT License** - see [LICENSE](LICENSE) for details.
+
+### Open Source Use ✅
+You are free to use, modify, and distribute this software under the MIT License terms.
+
+### Commercial & Enterprise Use 🏢
+For commercial licensing, custom development, enterprise support, or partnership opportunities:
+
+📧 **Contact:** Prof. Shahab Anbarjafari — shb@3sholding.com
 
 ## Acknowledgments
 
@@ -280,8 +300,17 @@ This project wouldn't be possible without the amazing open-source community. Spe
 
 ---
 
-**Questions? Issues? Ideas?**
+## Contact
 
-Feel free to open an issue on GitHub or reach out directly to Prof. Shahab Anbarjafari at shb@3sholding.com.
+| Purpose | Contact |
+|---------|---------|
+| 🐛 **Bug Reports & Features** | [GitHub Issues](https://github.com/3sholding/agentforge/issues) |
+| 💬 **General Questions** | shb@3sholding.com |
+| 🏢 **Business & Commercial** | shb@3sholding.com |
+| 🤝 **Partnerships** | shb@3sholding.com |
+
+---
+
+**Made with ❤️ in Estonia by [3S Holding OÜ](https://3sholding.com)**
 
 Happy building! 🚀
