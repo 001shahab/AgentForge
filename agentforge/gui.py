@@ -134,7 +134,7 @@ def main():
         
         3S Holding OÜ, Tartu, Estonia
         
-        [GitHub](https://github.com/3sholding/agentforge) | 
+        [GitHub](https://github.com/001shahab/AgentForge) | 
         [Documentation](https://agentforge.readthedocs.io)
         """)
     

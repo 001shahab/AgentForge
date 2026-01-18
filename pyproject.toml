@@ -5,8 +5,8 @@ description = "A lightweight framework for creating modular AI agents that chain
 authors = ["Prof. Shahab Anbarjafari <shb@3sholding.com>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/3sholding/agentforge"
-repository = "https://github.com/3sholding/agentforge"
+homepage = "https://github.com/001shahab/AgentForge"
+repository = "https://github.com/001shahab/AgentForge"
 keywords = ["ai", "agents", "automation", "llm", "web-scraping", "data-analysis"]
 classifiers = [
     "Development Status :: 4 - Beta",

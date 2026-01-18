@@ -1,7 +1,7 @@
 # AgentForge
 
 [![PyPI version](https://badge.fury.io/py/agentforge.svg)](https://badge.fury.io/py/agentforge)
-[![Tests](https://github.com/3sholding/agentforge/workflows/CI/badge.svg)](https://github.com/3sholding/agentforge/actions)
+[![Tests](https://github.com/001shahab/AgentForge/workflows/CI/badge.svg)](https://github.com/001shahab/AgentForge/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 
@@ -247,7 +247,7 @@ Please make sure to:
 
 ```bash
 # Clone the repo
-git clone https://github.com/3sholding/agentforge.git
+git clone https://github.com/001shahab/AgentForge.git
 cd agentforge
 
 # Install with Poetry
@@ -304,7 +304,7 @@ This project wouldn't be possible without the amazing open-source community. Spe
 
 | Purpose | Contact |
 |---------|---------|
-| 🐛 **Bug Reports & Features** | [GitHub Issues](https://github.com/3sholding/agentforge/issues) |
+| 🐛 **Bug Reports & Features** | [GitHub Issues](https://github.com/001shahab/AgentForge/issues) |
 | 💬 **General Questions** | shb@3sholding.com |
 | 🏢 **Business & Commercial** | shb@3sholding.com |
 | 🤝 **Partnerships** | shb@3sholding.com |
