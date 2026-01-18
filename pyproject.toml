@@ -1,0 +1,145 @@
+[tool.poetry]
+name = "agentforge"
+version = "0.1.0"
+description = "A lightweight framework for creating modular AI agents that chain together tasks like web scraping, data analysis, and content generation."
+authors = ["Prof. Shahab Anbarjafari <shb@3sholding.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/3sholding/agentforge"
+repository = "https://github.com/3sholding/agentforge"
+keywords = ["ai", "agents", "automation", "llm", "web-scraping", "data-analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+packages = [{include = "agentforge"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+# Core dependencies - these are always installed
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.0"
+pandas = "^2.0.0"
+pyyaml = "^6.0"
+click = "^8.1.0"
+aiohttp = "^3.9.0"
+tenacity = "^8.2.0"
+
+# LLM dependencies - optional but commonly used
+openai = {version = "^1.0.0", optional = true}
+groq = {version = "^0.4.0", optional = true}
+transformers = {version = "^4.35.0", optional = true}
+torch = {version = "^2.1.0", optional = true}
+huggingface-hub = {version = "^0.19.0", optional = true}
+
+# Visualization
+matplotlib = {version = "^3.8.0", optional = true}
+plotly = {version = "^5.18.0", optional = true}
+
+# GUI (requires Python 3.10+ due to Streamlit requirements)
+streamlit = {version = "^1.29.0", optional = true, python = ">=3.10"}
+
+# Plugins - optional extras
+feedparser = {version = "^6.0.0", optional = true}
+diffusers = {version = "^0.24.0", optional = true}
+gtts = {version = "^2.4.0", optional = true}
+yfinance = {version = "^0.2.0", optional = true}
+scrapy = {version = "^2.11.0", optional = true}
+
+[tool.poetry.extras]
+llm = ["openai", "groq", "transformers", "torch", "huggingface-hub"]
+openai = ["openai"]
+groq = ["groq"]
+huggingface = ["transformers", "torch", "huggingface-hub"]
+viz = ["matplotlib", "plotly"]
+gui = ["streamlit"]
+rss = ["feedparser"]
+image = ["diffusers", "torch"]
+voice = ["gtts"]
+stocks = ["yfinance"]
+scraping = ["scrapy"]
+all = [
+    "openai", "groq", "transformers", "torch", "huggingface-hub",
+    "matplotlib", "plotly", "streamlit", "feedparser", "diffusers",
+    "gtts", "yfinance", "scrapy"
+]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-asyncio = "^0.21.0"
+pytest-cov = "^4.1.0"
+black = "^23.12.0"
+ruff = "^0.1.0"
+sphinx = "^7.2.0"
+sphinx-rtd-theme = "^2.0.0"
+responses = "^0.24.0"
+
+[tool.poetry.scripts]
+agentforge = "agentforge.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ['py39', 'py310', 'py311', 'py312']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | myenv
+)/
+'''
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+]
+ignore = [
+    "E501",  # line too long (handled by black)
+    "B008",  # do not perform function calls in argument defaults
+    "C901",  # too complex
+]
+exclude = [
+    ".eggs",
+    ".git",
+    ".ruff_cache",
+    ".tox",
+    ".venv",
+    "build",
+    "dist",
+    "myenv",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+addopts = "-v --tb=short"
+

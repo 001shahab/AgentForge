@@ -1,0 +1,52 @@
+# News Analyzer Agent Configuration
+# 
+# This YAML file configures an agent that scrapes news and analyzes it.
+# You can run it with: agentforge run news_analyzer.yaml
+#
+# Author: Prof. Shahab Anbarjafari
+# 3S Holding OÜ, Tartu, Estonia
+
+name: news_analyzer
+version: "1.0"
+description: >
+  An agent that scrapes news websites and provides AI-powered analysis
+  of the content, identifying trends and key insights.
+
+# LLM Configuration
+# You can switch between backends without changing the agent logic
+llm:
+  backend: openai
+  model: gpt-4o-mini
+  temperature: 0.7
+  max_tokens: 1024
+
+# Skills Chain
+# These run in order, with output from each feeding into the next
+skills:
+  # First, scrape the web page
+  - skill: web_scraper
+    # Optional: target specific elements with CSS selectors
+    # selector: "article, .story"
+    extract_links: true
+  
+  # Then, generate an analysis
+  - skill: content_generation
+    template: analyze
+    # You could also use "summarize" for a shorter output
+
+# Agent Options
+options:
+  continue_on_error: false
+  max_retries: 3
+  logging_level: INFO
+
+# Metadata (optional, for documentation)
+metadata:
+  author: Prof. Shahab Anbarjafari
+  organization: 3S Holding OÜ
+  created: 2024-01-01
+  tags:
+    - news
+    - analysis
+    - scraping
+
