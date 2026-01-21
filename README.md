@@ -9,6 +9,8 @@
 
 I created AgentForge because I wanted a simple, clean way to chain together different AI-powered tasks without the complexity of larger frameworks. Whether you're scraping websites, analyzing data, or generating content, AgentForge makes it easy to build agents that do the heavy lifting for you.
 
+Paper: https://arxiv.org/abs/2601.13383
+
 ---
 
 ## ⚖️ Ownership & Licensing
@@ -308,6 +310,7 @@ This project wouldn't be possible without the amazing open-source community. Spe
 | 💬 **General Questions** | shb@3sholding.com |
 | 🏢 **Business & Commercial** | shb@3sholding.com |
 | 🤝 **Partnerships** | shb@3sholding.com |
+| ✅ **Partnerships** | https://arxiv.org/abs/2601.13383 |
 
 ---
 
